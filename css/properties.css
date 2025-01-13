@@ -1,0 +1,18 @@
+*
+{
+    color:#ff0000aa; /* Text color */
+    background-color: rgba(0, 0, 255, 0.555); /* Background color */
+    /* hsla(120, 100%, 50%, 0.3) */
+
+    font-family: "Times New Roman", sans-serif, serif;
+    font-size: 22px;
+    font-weight: 700; /* Number between 1 and 1000 */
+
+    text-align: right
+}
+
+img 
+{
+    height: auto;
+    width: 256px;
+}
