@@ -1,0 +1,97 @@
+/*
+selector {
+    property: value;
+}
+*/
+
+
+/* UNIVERSAL SELECTOR */
+
+* {
+    color: purple; /* Applies to every element */
+}
+
+
+/* TYPE SELECTOR */
+
+div {
+    color: black; /* Applies to every <div></div> */
+}
+
+
+/* CLASS SELECTOR */
+
+/* <p class="class-id"> </p> */
+/* <a class="class-id another-class-id"> </a> */
+
+.class-id {
+    color: yellow; /* Applies to every HTML element with the class attribute set to "class-id" */
+}
+
+
+/* ID SELECTOR */
+
+/* <p id="unique-id"> </p> */
+/* <a id="another-unique-id"> </a> */
+
+#unique-id {
+    color: gray; /* Applies ONLY to the HTML element with the id attribute set to "unique-id" */
+}
+
+
+/* GROUPING SELECTOR */
+.class-id-one,
+.class-id-two {
+    color: white; /* Shared property between "class-id-one" and "class-id-two" */
+    background-color: black;
+}
+
+.class-id-one {
+    height: 50px;
+    /* Several unique declarations */
+}
+
+.class-id-two {
+    height: 100%;
+    /* Several unique declarations */
+}
+
+
+/* CHAINING SELECTOR */
+
+/* Chaining classes */
+.class-id-one.class-id-two {
+    color: magenta; /* Applies ONLY to the HTML element with the class attribute set to "class-id-one" and "class-id-one" */
+}
+
+/* Chaining a class and an id */
+.class-id#unique-id {
+    color: brown; /* Applies ONLY to the HTML element with the class attribute set to "class-id-one" and "class-id-one" */
+}
+
+/* You can't chain Type Selectors */
+
+
+/* DESCENDANT COMBINATOR */
+.class-father .class-child {
+    color: blueviolet; /* Applies ONLY if the HTML element has the class attribute set to "class-child" and is nested to an HTML element that has the class attribute set to "class-father" */
+}
+
+/*
+
+<div class="class-father">
+  
+  <div class="class-child"> <!-- APPLIES -->
+
+    <div class="class-child"> <!-- APPLIES -->
+    </div> 
+
+  </div>
+
+</div>
+
+<div class="class-child"> <!-- NOT APPLIES -->
+</div>
+
+*/
+
