@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Links</title>
+    </head>
+
+    <body>
+
+        <!-- scheme://domain:port/path?parameters#anchor -->
+        <!-- https://www.webpage.com:80/page?key1=value&key2=value#SomeWhereInTheDocument -->
+
+        <p>
+            <a>Anchor element</a>
+        </p>
+
+        <p>
+            <a href="https://www.theodinproject.com/lessons/foundations-links-and-images#anchor-elements">Hypertext reference attribute</a>
+        </p>
+
+        <br>
+
+        <h3> Absolute links</h3>
+
+        <p>
+            <a href="https://www.theodinproject.com/lessons/foundations-links-and-images#opening-links-in-a-new-tab" target="_self">Target self attribute (same tab)</a>
+        </p>
+
+        <p>
+            <a href="https://www.theodinproject.com/lessons/foundations-links-and-images#opening-links-in-a-new-tab" target="_blank">Target blank attribute (new tab)</a>
+        </p>
+
+        <p>
+            <a href="https://www.theodinproject.com/lessons/foundations-links-and-images#opening-links-in-a-new-tab" target="_blank" rel="noopener noreferrer">noopener & noreferrer attribute (anti phishing & tabnabbing)</a>
+        </p>
+
+        <p>
+            <img src="https://www.theodinproject.com/mstile-310x310.png" width=64 height=64>
+        </p>
+
+        <br>
+
+        <h3> Relative links</h3>
+        <p>
+            <a href="text-formatting.html">Relative link (same folder)</a>
+        </p>
+
+        <!-- ./ means it should start looking for the file/directory relative to the current directory -->
+        <p>
+            <a href="./resources/relative-link-page.html">Relative link (subfolder)</a>
+        </p>
+
+        <p>
+            <img src="./resources/relative-image.png">
+        </p>
+
+        <!-- ../ steps out from the current folder and starts looking for the file/directory. It's relative to the parent of the current directory -->
+        <p>
+            <a href="../css/resources/">Relative link (parent folder)</a>
+        </p>
+        <p>
+            <img src="../css/resources/relative-image-from-parent.png">
+        </p>
+
+        <p>
+            <img src="not-found.png" alt="Alternative text attribute">
+        </p>
+        
+        
+
+    </body>
+
+</html>
