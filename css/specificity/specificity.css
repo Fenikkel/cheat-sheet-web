@@ -1,0 +1,26 @@
+/* When an element has multiple conflicting declarations, 'specificity' is a tie-breaker */
+
+/* Universal selector */
+* {
+    color: magenta;
+}
+
+/* Type selector */
+div {
+    color: yellowgreen;
+}
+
+/* Class selector */
+.class-id {
+    color: cyan;
+}
+
+/* Id selector */
+#unique-id {
+    color: red; 
+}
+
+/* Descendant combinator */
+.class-father .class-child {
+    color: green; 
+}

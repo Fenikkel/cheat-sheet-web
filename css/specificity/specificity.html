@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+
+    <link rel="stylesheet" href="./specificity.css">
+</head>
+<body>
+
+    <p>
+        UNIVERSAL SELECTOR (no specificity value)
+    </p>
+
+    <div>
+        TYPE SELECTOR (lowest specificity)
+    </div>
+
+    <br>
+
+    <div class="class-id">
+        CLASS SELECTOR
+    </div>
+
+    <br>
+    
+    <div id="unique-id">
+        ID SELECTOR
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="class-id" id="unique-id">
+        CLASS SELECTOR &nbsp; vs &nbsp; <b class="class-id" id="unique-id">ID SELECTOR</b>
+    </div>
+
+    <br>
+
+    <div id="unique-id" class="class-id" >
+        <strong id="unique-id" class="class-id">ID SELECTOR</strong> &nbsp; vs &nbsp; CLASS SELECTOR
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="class-father">
+        <div class="class-child class-id">
+            <b class="class-father class-child">DESCENDANT COMBINATOR</b> &nbsp; vs &nbsp; CLASS SELECTOR (alongside child)
+        </div>
+    </div>
+
+    <br>
+
+    <div class="class-child">
+        <div class="class-father class-id">
+            DESCENDANT COMBINATOR (wrong order) &nbsp; vs &nbsp; <b class="class-id">CLASS SELECTOR</b>
+        </div>
+    </div>
+
+    <br>
+    
+    <div class="class-father class-id">
+        <div class="class-child">
+            <b class="class-father class-child">DESCENDANT COMBINATOR</b> &nbsp; vs &nbsp; CLASS SELECTOR (alongside father)
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="class-father">
+        <div class="class-child" id="unique-id">
+            DESCENDANT COMBINATOR &nbsp; vs &nbsp; <b id="unique-id">ID SELECTOR (alongside child)</b> 
+        </div>
+    </div>
+
+    <br>
+
+    <div class="class-father" id="unique-id">
+        <div class="class-child">
+            <b class="class-father class-child">DESCENDANT COMBINATOR</b> &nbsp; vs &nbsp; ID SELECTOR (alongside father) 
+        </div>
+    </div>
+
+    <br>
+</body>
+</html>
