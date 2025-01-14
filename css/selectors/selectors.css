@@ -79,6 +79,8 @@ div {
 
 
 /* DESCENDANT COMBINATOR */
+
+/* Class descendant */
 .class-father .class-child {
     color: yellow; /* Applies ONLY if the HTML element has the class attribute set to "class-child" and is nested to an HTML element that has the class attribute set to "class-father" */
 }
@@ -101,3 +103,17 @@ div {
 
 */
 
+/* Id descendant */
+#unique-id-father #unique-id-child {
+    color: greenyellow; /* Applies ONLY if the HTML element has the id attribute set to "unique-id-child" and is nested to an HTML element that has the id attribute set to "unique-id-father" */
+}
+
+/* Class & Id descendant */
+.class-father-two #unique-id-child-two {
+    color: blue; /* Applies ONLY if the HTML element has the id attribute set to "unique-id-child-two" and is nested to an HTML element that has the class attribute set to "class-father-two" */
+}
+
+/* Id & Class descendant */
+#unique-id-father-two .class-child-two  {
+    color: orange; /* Applies ONLY if the HTML element has the class attribute set to "class-child-two" and is nested to an HTML element that has the class attribute set to "unique-id-father-two" */
+}

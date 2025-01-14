@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 
     <link rel="stylesheet" href="./selectors.css">
 </head>
+
 <body>
 
     <p>
@@ -24,32 +26,33 @@
     </div>
 
     <br>
-    
+
     <div id="unique-id">
         ID SELECTOR (unique-id &nbsp; => &nbsp; div)
     </div>
 
     <br>
-    
+
     <div class="class-id-one">
         GROUPING SELECTOR (class-id-one &nbsp; => &nbsp; div)
     </div>
 
     <br>
-    
+
     <div class="class-id-two">
         GROUPING SELECTOR (class-id-two &nbsp; => &nbsp; div)
     </div>
 
     <br>
-    
+
     <div class="class-id-one class-id-two">
         CHAINING SELECTOR (class-id-one class-id-two &nbsp; => &nbsp; div)
     </div>
 
     <br>
-    
-    <div class="class-id-two class-id-one">   <!-- On style conflict (multiple id/class), the last selector applied wins. -->
+
+    <div class="class-id-two class-id-one">
+        <!-- On style conflict (multiple id/class), the last selector applied wins. -->
         CHAINING SELECTOR (class-id-two class-id-one &nbsp; => &nbsp; div)
     </div>
 
@@ -61,7 +64,7 @@
 
     <br>
 
-    <div id="unique-id" class="class-id" >
+    <div id="unique-id" class="class-id">
         CHAINING SELECTOR (unique-id class-id &nbsp; => &nbsp; div)
     </div>
 
@@ -70,6 +73,7 @@
     <div>
         DESCENDANT COMBINATOR:
     </div>
+    <h3>Between classes</h3>
     <ul>
         <li>No class</li>
         <li class="class-father">class-father</li>
@@ -85,5 +89,57 @@
         <li class="class-father">class-father</li>
         <li class="class-child">class-child</li>
     </ul>
+
+    <h3>Between ids</h3>
+
+    <ul>
+        <li>No class</li>
+        <li id="unique-id-father">unique-id-father</li>
+        <li id="unique-id-child">unique-id-child</li>
+        <li id="unique-id-father">
+            unique-id-father:
+            <ul> <!-- Nesting  -->
+                <li id="unique-id-father">unique-id-father</li>
+                <li id="unique-id-child">unique-id-child</li>
+                <li>No class</li>
+            </ul>
+        </li>
+        <li id="unique-id-father">unique-id-fathe</li>
+        <li id="unique-id-child">unique-id-child</li>
+    </ul>
+
+    <h3>Between class > id</h3>
+
+    <ul>
+        <li>No class</li>
+        <li class="class-father-two">class-father-two</li>
+        <li id="unique-id-child-two">unique-id-child-two</li>
+        <li class="class-father-two">
+            class-father-two:
+            <ul> <!-- Nesting  -->
+                <li class="class-father-two">class-father-two</li>
+                <li id="unique-id-child-two">unique-id-child-two</li>
+                <li>No class</li>
+            </ul>
+        </li>
+        <li class="class-father-two">class-father-two</li>
+        <li id="unique-id-child-two">unique-id-child-two</li>
+    </ul>
+
+    <h3>Between id > class</h3>
+    <ul>
+        <li>No class</li>
+        <li class="class-child-two">class-child-two</li>
+        <li id="unique-id-father-two">unique-id-father-two</li>
+        <li id="unique-id-father-two">
+            unique-id-father-two:
+            <ul> <!-- Nesting  -->
+                <li class="class-child-two">class-child-two</li>
+                <li id="unique-id-father-two">unique-id-father-two</li>
+                <li>No class</li>
+            </ul>
+        </li>
+    </ul>
 </body>
+
 </html>
