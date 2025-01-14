@@ -10,8 +10,7 @@ selector {
 
 * {
     background-color: purple;
-    color: white;
-    text-align: center /* Applies to every element */
+    color: white; /* Applies to every element */ 
 }
 
 
@@ -19,6 +18,7 @@ selector {
 
 div {
     background-color: black;
+    text-align: center;
     font-weight: 700; /* Applies to every <div></div> */  
 }
 
@@ -80,7 +80,7 @@ div {
 
 /* DESCENDANT COMBINATOR */
 .class-father .class-child {
-    color: blueviolet; /* Applies ONLY if the HTML element has the class attribute set to "class-child" and is nested to an HTML element that has the class attribute set to "class-father" */
+    color: yellow; /* Applies ONLY if the HTML element has the class attribute set to "class-child" and is nested to an HTML element that has the class attribute set to "class-father" */
 }
 
 /*

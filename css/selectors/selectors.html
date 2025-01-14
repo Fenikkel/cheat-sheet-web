@@ -65,8 +65,25 @@
         CHAINING SELECTOR (unique-id class-id &nbsp; => &nbsp; div)
     </div>
 
-    <p>
-        <img src="../resources/relative-image-from-parent.png">
-    </p>
+    <br>
+
+    <div>
+        DESCENDANT COMBINATOR:
+    </div>
+    <ul>
+        <li>No class</li>
+        <li class="class-father">class-father</li>
+        <li class="class-child">class-child</li>
+        <li class="class-father">
+            class-father:
+            <ul> <!-- Nesting  -->
+                <li class="class-child">class-child</li>
+                <li class="class-father">class-father</li>
+                <li>No class</li>
+            </ul>
+        </li>
+        <li class="class-father">class-father</li>
+        <li class="class-child">class-child</li>
+    </ul>
 </body>
 </html>
