@@ -20,7 +20,22 @@ div {
     color: red; 
 }
 
-/* Descendant combinator */
+/* Descendant combinator (classes) */
 .class-father .class-child {
     color: green; 
+}
+
+/* Descendant combinator (ids) */
+#unique-id-father #unique-id-child {
+    color: blue; 
+}
+
+/* Descendant combinator (class > id) */
+.class-father-two #unique-id-child-two {
+    color: orange; 
+}
+
+#unique-id-father-two .class-child-two 
+{
+    color: cornflowerblue;
 }

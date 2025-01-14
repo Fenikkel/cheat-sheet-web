@@ -75,7 +75,19 @@ div {
     background-color: green; /* Applies ONLY to the HTML element with the class attribute set to "class-id" and the id attribute set to "unique-id" */
 }
 
-/* You can't chain Type Selectors */
+/* Chaining a type and a class */
+p.class-id {
+    background-color: cyan; /* Applies ONLY to the HTML element <p> with the class attribute set to "class-id" */
+}
+
+p#unique-id {
+    background-color: orange; /* Applies ONLY to the HTML element <p> with the id attribute set to "unique-id" */
+}
+p#unique-id.class-id {
+    background-color: yellowgreen; /* Applies ONLY to the HTML element <p> with the id attribute set to "unique-id" */
+}
+
+/* You can't chain more than one Type Selectors (it is a type conflict) */
 
 
 /* DESCENDANT COMBINATOR */
