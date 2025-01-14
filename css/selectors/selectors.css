@@ -4,18 +4,22 @@ selector {
 }
 */
 
+/* On style conflict (multiple id/class), the last selector applied wins. */
 
 /* UNIVERSAL SELECTOR */
 
 * {
-    color: purple; /* Applies to every element */
+    background-color: purple;
+    color: white;
+    text-align: center /* Applies to every element */
 }
 
 
 /* TYPE SELECTOR */
 
 div {
-    color: black; /* Applies to every <div></div> */
+    background-color: black;
+    font-weight: 700; /* Applies to every <div></div> */  
 }
 
 
@@ -25,7 +29,8 @@ div {
 /* <a class="class-id another-class-id"> </a> */
 
 .class-id {
-    color: yellow; /* Applies to every HTML element with the class attribute set to "class-id" */
+    background-color: yellow; /* Applies to every HTML element with the class attribute set to "class-id" */
+    color: black;
 }
 
 
@@ -35,7 +40,7 @@ div {
 /* <a id="another-unique-id"> </a> */
 
 #unique-id {
-    color: gray; /* Applies ONLY to the HTML element with the id attribute set to "unique-id" */
+    background-color: gray; /* Applies ONLY to the HTML element with the id attribute set to "unique-id" */
 }
 
 
@@ -43,16 +48,17 @@ div {
 .class-id-one,
 .class-id-two {
     color: white; /* Shared property between "class-id-one" and "class-id-two" */
-    background-color: black;
+    background-color: red;
 }
 
 .class-id-one {
-    height: 50px;
+    height: 30px;
+    text-align: left;
     /* Several unique declarations */
 }
 
 .class-id-two {
-    height: 100%;
+    text-align: right;
     /* Several unique declarations */
 }
 
@@ -61,12 +67,12 @@ div {
 
 /* Chaining classes */
 .class-id-one.class-id-two {
-    color: magenta; /* Applies ONLY to the HTML element with the class attribute set to "class-id-one" and "class-id-one" */
+    background-color: magenta; /* Applies ONLY to the HTML element with the class attribute set to "class-id-one" and "class-id-two" */
 }
 
 /* Chaining a class and an id */
 .class-id#unique-id {
-    color: brown; /* Applies ONLY to the HTML element with the class attribute set to "class-id-one" and "class-id-one" */
+    background-color: green; /* Applies ONLY to the HTML element with the class attribute set to "class-id" and the id attribute set to "unique-id" */
 }
 
 /* You can't chain Type Selectors */

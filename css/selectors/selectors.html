@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+
+    <link rel="stylesheet" href="./selectors.css">
+</head>
+<body>
+
+    <p>
+        UNIVERSAL SELECTOR (* &nbsp; => &nbsp; p)
+    </p>
+
+    <div>
+        TYPE SELECTOR (div &nbsp; => &nbsp; div)
+    </div>
+
+    <br>
+
+    <div class="class-id">
+        CLASS SELECTOR (class-id &nbsp; => &nbsp; div)
+    </div>
+
+    <br>
+    
+    <div id="unique-id">
+        ID SELECTOR (unique-id &nbsp; => &nbsp; div)
+    </div>
+
+    <br>
+    
+    <div class="class-id-one">
+        GROUPING SELECTOR (class-id-one &nbsp; => &nbsp; div)
+    </div>
+
+    <br>
+    
+    <div class="class-id-two">
+        GROUPING SELECTOR (class-id-two &nbsp; => &nbsp; div)
+    </div>
+
+    <br>
+    
+    <div class="class-id-one class-id-two">
+        CHAINING SELECTOR (class-id-one class-id-two &nbsp; => &nbsp; div)
+    </div>
+
+    <br>
+    
+    <div class="class-id-two class-id-one">   <!-- On style conflict (multiple id/class), the last selector applied wins. -->
+        CHAINING SELECTOR (class-id-two class-id-one &nbsp; => &nbsp; div)
+    </div>
+
+    <br>
+
+    <div class="class-id" id="unique-id">
+        CHAINING SELECTOR (class-id unique-id &nbsp; => &nbsp; div)
+    </div>
+
+    <br>
+
+    <div id="unique-id" class="class-id" >
+        CHAINING SELECTOR (unique-id class-id &nbsp; => &nbsp; div)
+    </div>
+
+    <p>
+        <img src="../resources/relative-image-from-parent.png">
+    </p>
+</body>
+</html>
