@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="./flexbox.css">
+</head>
+
+<body>
+    <p><mark>Change the window size for more understanding</mark></p>
+
+    <!-- NORMAL FLOW -->
+    <h2>Normal flow</h2>
+
+    <div class="default-container">
+        <div class="default-element">normal</div>
+        <div class="default-element">normal</div>
+        <div class="default-element">normal</div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- DISPLAY FLEX -->
+    <h2>display: flex (empty)</h2>
+
+    <div class="flex-container"></div>
+
+    <br>
+    <br>
+
+    <h2>display: flex (with normal flow elements)</h2>
+
+    <div class="flex-container">
+        <div class="default-element">normal</div>
+        <div class="default-element">normal</div>
+        <div class="default-element">normal</div>
+    </div>
+
+    <br>
+    <br>
+
+    <h2>"flex" shorthand property</h2>
+
+    <!-- FLEX (ONE) -->
+
+    <div class="flex-container">
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-one">one</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-one">one</div>
+        <div class="default-element">normal</div>
+        <div class="flex-element-one">one</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-one">one</div>
+        <div class="default-element">normal</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="default-element">normal</div>
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-one">one</div>
+    </div>
+
+    <ul>
+        <li>
+            flex: 1
+            <ul>
+                <li>flex-grow: 1</li>
+                <li>flex-shrink: 1</li>
+                <li>flex-basis: 0</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+
+    <!-- FLEX (ZERO) -->
+
+    <div class="flex-container">
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-zero">zero</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-zero">zero</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-zero">zero</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-one">one</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-one">one</div>
+    </div>
+
+    <ul>
+        <li>
+            flex: 0
+            <ul>
+                <li>flex-grow: 0</li>
+                <li>flex-shrink: 1</li>
+                <li>flex-basis: 0</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+
+    <!-- FLEX (HALF) -->
+
+    <div class="flex-container">
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-half">half</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-one">one</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-half">half</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-zero">zero</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-half">half</div>
+    </div>
+
+    <ul>
+        <li>
+            flex: 0.5
+            <ul>
+                <li>flex-grow: 0.5</li>
+                <li>flex-shrink: 1</li>
+                <li>flex-basis: 0</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+
+    <!-- FLEX (TWO) -->
+
+    <div class="flex-container">
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-two">two</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-two">two</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-two">two</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-two">two</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-zero">zero</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-half">half</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-one">one</div>
+    </div>
+
+    <br>
+
+    <ul>
+        <li>
+            flex: 2
+            <ul>
+                <li>flex-grow: 2</li>
+                <li>flex-shrink: 1</li>
+                <li>flex-basis: 0</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+
+    <!-- FLEX (AUTO) -->
+
+    <div class="flex-container">
+        <div class="flex-element-auto">auto</div>
+        <div class="flex-element-auto">auto</div>
+        <div class="flex-element-auto">auto</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-auto">auto</div>
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-auto">auto</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-auto">auto</div>
+        <div class="flex-element-two">two</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-auto">auto</div>
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-auto">auto</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-auto">auto</div>
+        <div class="flex-element-one">one</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-auto">auto</div>
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-auto">auto</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-auto">auto</div>
+        <div class="flex-element-half">half</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-auto">auto</div>
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-auto">auto</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-auto">auto</div>
+        <div class="flex-element-zero">zero</div>
+    </div>
+
+    <br>
+
+    <ul>
+        <li>
+            flex: auto
+            <ul>
+                <li>flex-grow: 1</li>
+                <li>flex-shrink: 1</li>
+                <li>flex-basis: auto</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+
+    <!-- FLEX INITIAL -->
+
+    <div class="flex-container">
+        <div class="flex-element-initial">initial</div>
+        <div class="flex-element-initial">initial</div>
+        <div class="flex-element-initial">initial</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-initial">initial</div>
+        <div class="flex-element-two">two</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-initial">initial</div>
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-initial">initial</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-initial">initial</div>
+        <div class="flex-element-one">one</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-initial">initial</div>
+        <div class="flex-element-half">half</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-initial">initial</div>
+        <div class="flex-element-zero">zero</div>
+    </div>
+
+    <br>
+
+    <ul>
+        <li>
+            flex: initial
+            <ul>
+                <li>flex-grow: 0</li>
+                <li>flex-shrink: 1</li>
+                <li>flex-basis: auto</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+
+ <!-- FLEX NONE -->
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-none">none</div>
+        <div class="flex-element-none">none</div>
+        <div class="flex-element-none">none</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-none">none</div>
+        <div class="flex-element-two">two</div>
+        <div class="flex-element-none">none</div>
+    </div>
+
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-none">none</div>
+        <div class="flex-element-one">one</div>
+        <div class="flex-element-none">none</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-none">none</div>
+        <div class="flex-element-half">half</div>
+        <div class="flex-element-none">none</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-element-none">none</div>
+        <div class="flex-element-zero">zero</div>
+        <div class="flex-element-none">none</div>
+    </div>
+
+    <br>
+
+    <ul>
+        <li>
+            flex: none
+            <ul>
+                <li>flex-grow: 0</li>
+                <li>flex-shrink: 0</li>
+                <li>flex-basis: auto</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+
+</body>
+
+</html>

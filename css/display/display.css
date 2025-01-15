@@ -11,6 +11,7 @@ span {
     width: 100px;
     height: 160px;
     padding: 18px;
+    margin: 8px;
 }
 
 span.inline {

@@ -1,0 +1,53 @@
+.default-container {
+    display: block; /* Default */
+    background: rgb(255, 239, 224);
+    border: 1px solid red;
+}
+
+.default-element {
+    display: block; /* Default */
+    border: 2px solid gray;
+}
+
+.flex-container {
+    display: flex; 
+    background: rgb(255, 239, 224);
+    border: 1px solid red;
+}
+
+
+
+.flex-element-one{
+    flex: 1;
+    border: 2px solid blue;
+}
+
+.flex-element-zero{
+    flex: 0;
+    border: 2px solid green;
+}
+
+.flex-element-half{
+    flex: 0.5;
+    border: 2px solid purple;
+}
+
+.flex-element-two{
+    flex: 2;
+    border: 2px solid cyan;
+}
+
+.flex-element-auto{
+    flex: auto;
+    border: 2px solid magenta;
+}
+
+.flex-element-initial{
+    flex: initial;
+    border: 2px solid yellow;
+}
+
+.flex-element-none{
+    flex: none;
+    border: 2px solid black;
+}
