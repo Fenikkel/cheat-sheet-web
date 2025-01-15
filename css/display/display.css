@@ -1,0 +1,29 @@
+/* * {
+    outline: 2px solid red;
+} */
+
+p {
+    background-color: rgba(172, 255, 47, 0.25);
+    width: 400px;
+}
+
+span {
+    width: 100px;
+    height: 160px;
+    padding: 18px;
+}
+
+span.inline {
+    display: inline; /* the default for span */
+    border: 3px dashed blue;
+}
+
+span.inline-block {
+    display: inline-block;
+    border: 3px dotted blue;
+}
+
+span.block {
+    display: block;
+    border: 3px double blue;
+}
