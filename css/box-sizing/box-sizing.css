@@ -1,0 +1,23 @@
+div
+{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    border: 30px solid purple;
+    margin: 100px;
+}
+
+/* Content box does not consider the padding and the border for the width and height */
+.content-box
+ {
+    box-sizing: content-box;
+ }
+
+ /* Border box consider the padding and the border for the width and height */
+ .border-box
+ {
+    box-sizing: border-box;
+ }
+
+ /* The margin is not considered because it merges with the other margins and it doesn't have a static size */
