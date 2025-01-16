@@ -51,3 +51,46 @@
     flex: none;
     border: 2px solid black;
 }
+
+.flex-container-vertical{
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 239, 224);
+    border: 1px solid red;
+}
+
+.flex-element-horizontal-none{
+    flex: none;
+    height: 40px;
+    border: 2px solid black;
+}
+
+.flex-element-horizontal-auto{
+    flex: auto;
+    height: 40px;
+    border: 2px solid black;
+}
+
+.flex-element-horizontal-one{
+    flex: 1;
+    height: 40px;
+    border: 2px solid black;
+}
+
+.flex-element-horizontal-half{
+    flex: 0.5;
+    height: 40px;
+    border: 2px solid black;
+}
+
+.flex-element-horizontal-two{
+    flex: 2;
+    height: 40px;
+    border: 2px solid black;
+}
+
+.flex-element-horizontal-custom{
+    flex: 1 1 10px;
+    height: 40px;
+    border: 2px solid black;
+}
